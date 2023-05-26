@@ -1,0 +1,835 @@
+  *,
+  *::after,
+  *::before {
+      box-sizing: border-box;
+  }
+
+
+  /* HEADER */
+
+  .header menu {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .header nav ul {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      list-style: none;
+      padding-left: 0;
+      padding-top: 0.5rem;
+
+  }
+
+  .header ul a {
+      padding: 0.5rem 1rem;
+      color: black;
+      text-decoration: none;
+      background-color: #ebe3db;
+      transition-duration: 1s;
+  }
+
+  nav ul li .active{
+    background-color: #4c4442;
+    color: #fff;
+  }
+
+  nav ul li.active:hover{
+    background-color: #fff;
+    color: #4c4442;
+
+  }
+
+  .header ul a:hover {
+      color: #fff;
+      background-color: #950000;
+  }
+
+  .header div {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+  }
+
+  .header i {
+      font-size: 15px;
+      color: #950000;
+  }
+
+  .header menu div img {
+      width: 90px;
+  }
+
+  /* FOOTER */
+  .footer {
+      background-image: url(../instructions/ressources/images/footer-bg.jpg);
+      color: #fff;
+  }
+
+  .address {
+      display: flex;
+      justify-content: center;
+      gap: 5rem;
+  }
+
+  .address h5 {
+      padding-bottom: .8rem;
+      border-bottom: 1px dashed #fff;
+  }
+
+  .address div {
+      text-align: center;
+  }
+
+  .footer .div {
+      padding-block: 1rem;
+      text-align: center;
+      background-color: #444444;
+  }
+
+  .footer img {
+      width: 75px;
+  }
+
+  .footer a {
+      color: #fff;
+  }
+
+  footer i {
+      display: flex;
+      margin-inline: 0.5rem;
+      font-size: 10px;
+      color: #fff;
+  }
+
+  .footer p {
+      font-size: 1rem;
+  }
+
+  h5 {
+      font-size: 1.125rem;
+  }
+
+  /* GENERALITE */
+
+  /* FONT-FACE    Athiti*/
+  @font-face {
+      font-family: "Athiti";
+      src: url("../instructions/fonts/Athiti/athiti-bold.woff2") format("woff2"),
+          url("../instructions/fonts/Athiti/athiti-bold.woff") format("woff"),
+          url("../instructions/fonts/Athiti/athiti-bold.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 700;
+
+  }
+
+  @font-face {
+      font-family: "Athiti";
+      src: url("../instructions/fonts/Athiti/athiti-extralight.woff2") format("woff2"),
+          url("../instructions/fonts/Athiti/athiti-extralight.woff") format("woff"),
+          url("../instructions/fonts/Athiti/athiti-extralight.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 200;
+  }
+
+  @font-face {
+      font-family: "Athiti";
+      src: url("../instructions/fonts/Athiti/athiti-regular.woff2") format("woff2"),
+          url("../instructions/fonts/Athiti/athiti-regular.woff") format("woff"),
+          url("../instructions/fonts/Athiti/athiti-regular.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 400;
+  }
+
+  @font-face {
+      font-family: "Athiti";
+      src: url("../instructions/fonts/Athiti/athiti-light.woff2") format("woff2"),
+          url("../instructions/fonts/Athiti/athiti-light.woff") format("woff"),
+          url("../instructions/fonts/Athiti/athiti-light.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 300;
+  }
+
+  @font-face {
+      font-family: "Athiti";
+      src: url("../instructions/fonts/Athiti/athiti-medium.woff2") format("woff2"),
+          url("../instructions/fonts/Athiti/athiti-medium.woff") format("woff"),
+          url("../instructions/fonts/Athiti/athiti-medium.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 500;
+  }
+
+  @font-face {
+      font-family: "Athiti";
+      src: url("../instructions/fonts/Athiti/athiti-semibold.woff2") format("woff2"),
+          url("../instructions/fonts/Athiti/athiti-semibold.woff") format("woff"),
+          url("../instructions/fonts/Athiti/athiti-semibold.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 600;
+  }
+
+  /* FONT-FACE    Merienda*/
+
+
+  @font-face {
+      font-family: "Merienda";
+      src: url("../instructions/fonts/Merienda/merienda-black.woff2") format("woff2"),
+          url("../instructions/fonts/Merienda/merienda-black.woff") format("woff"),
+          url("../instructions/fonts/Merienda/merienda-black.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 900;
+  }
+
+
+  @font-face {
+      font-family: "Merienda";
+      src: url("../instructions/fonts/Merienda/merienda-bold.woff2") format("woff2"),
+          url("../instructions/fonts/Merienda/merienda-bold.woff") format("woff"),
+          url("../instructions/fonts/Merienda/merienda-bold.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 700;
+  }
+
+  @font-face {
+      font-family: "Merienda";
+      src: url("../instructions/fonts/Merienda/merienda-extrabold.woff2") format("woff2"),
+          url("../instructions/fonts/Merienda/merienda-extrabold.woff") format("woff"),
+          url("../instructions/fonts/Merienda/merienda-bold.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 800;
+  }
+
+  @font-face {
+      font-family: "Merienda";
+      src: url("../instructions/fonts/Merienda/merienda-light.woff2") format("woff2"),
+          url("../instructions/fonts/Merienda/merienda-light.woff") format("woff"),
+          url("../instructions/fonts/Merienda/merienda-light.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 300;
+  }
+
+  @font-face {
+      font-family: "Merienda";
+      src: url("../instructions/fonts/Merienda/merienda-medium.woff2") format("woff2"),
+          url("../instructions/fonts/Merienda/merienda-medium.woff") format("woff"),
+          url("../instructions/fonts/Merienda/merienda-medium.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 500;
+  }
+
+  @font-face {
+      font-family: "Merienda";
+      src: url("../instructions/fonts/Merienda/merienda-regular.woff2") format("woff2"),
+          url("../instructions/fonts/Merienda/merienda-regular.woff") format("woff"),
+          url("../instructions/fonts/Merienda/merienda-regular.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 400;
+  }
+
+  @font-face {
+      font-family: "Merienda";
+      src: url("../instructions/fonts/Merienda/merienda-semibold.woff2") format("woff2"),
+          url("../instructions/fonts/Merienda/merienda-semibold.woff") format("woff"),
+          url("../instructions/fonts/Merienda/merienda-semibold.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 600;
+  }
+
+  /* FIN FONT FACE */
+
+  i {
+      display: flex;
+      font-size: 10px;
+      color: #950000;
+  }
+
+  h2 {
+      text-align: center;
+  }
+
+  h2 {
+      font-size: 1.875rem;
+  }
+
+  h3 {
+      font-size: 1.5625rem;
+  }
+
+  h4 {
+      font-size: 1.25rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+      font-family: 'Merienda';
+  }
+
+  .container {
+      font-size: 1.125rem;
+      font-family: 'Athiti';
+  }
+
+  .container img {
+      width: 100%;
+  }
+
+  /* HOME */
+
+  .container {
+      max-width: 1400px;
+      margin-inline: auto;
+  }
+
+
+  .item {
+      font-size: 2rem;
+      font-weight: bold;
+      padding-block: 1rem;
+  }
+
+  .slick-prev {
+      left: .7rem;
+      padding-left: 1.5rem;
+      z-index: 1;
+  }
+
+  .slick-next {
+      right: .7rem;
+      padding-right: 1.5rem;
+  }
+
+  .float img {
+      float: right;
+      width: 40%;
+  }
+
+  .clearfix {
+      overflow: auto;
+  }
+
+  .float p {
+      margin-right: 42%;
+  }
+
+  .float p:nth-child(2) {
+      margin-top: 0;
+  }
+
+  /* SPECIAL MENU */
+  .special_m {
+      margin-block: 1rem;
+  }
+
+  .flex {
+      display: flex;
+      gap: 1rem;
+  }
+
+  .flex section {
+      background-color: #ebe3db;
+  }
+
+  .flex img {
+      width: 100%;
+  }
+
+  /* Au survol des images des menus */
+  .parent_survol {
+      position: relative;
+      background-color: rgba(76, 67, 67, .9);
+  }
+
+  .survol {
+      position: absolute;
+      top: 1rem;
+      bottom: 1rem;
+      left: 1rem;
+      right: 1rem;
+      text-align: center;
+      border: 0.5rem solid #fff;
+      opacity: 0;
+      color: #fff;
+  }
+
+  .parent_survol:hover img {
+      opacity: 0.2;
+  }
+
+  .parent_survol:hover .survol {
+      opacity: 1;
+      transition-duration: 3s;
+  }
+
+  .survol p:first-child {
+      font-size: 3.125rem;
+  }
+
+  .special_m {
+      text-align: center;
+  }
+
+  /* TEXTE EN BAS DU MENU */
+  .flex ul {
+      list-style: none;
+      padding-left: 0;
+  }
+
+  .flex ul li {
+      font-size: 0.9375rem;
+      text-align: center;
+      margin-block: 1rem;
+      font-size: 0.9375rem;
+      border-bottom: 1px dashed #4c4343;
+  }
+
+  .flex ul i {
+      margin-inline: 1rem;
+  }
+
+  .button {
+      width: 75%;
+      display: flex;
+      justify-content: center;
+      margin-inline: auto;
+      margin-bottom: 1rem;
+      padding-block: 1rem;
+      font-size: 1rem;
+      color: #fff;
+      background-color: #4c4442;
+  }
+
+  .button:hover {
+      color: #fff;
+      background-color: #950000;
+      transition-duration: 2s;
+  }
+
+  .button img {
+      width: 1rem;
+      margin-right: 0.5rem;
+  }
+
+  /* PAGE ABOUT */
+
+  video {
+      width: 70%;
+      height: auto;
+      margin-inline: 15%;
+  }
+
+  .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      justify-items: center;
+      gap: 1rem;
+      background-color: #ebe3db;
+
+  }
+
+  .grid img {
+      padding-inline: 1rem;
+      padding-block: 0.2rem;
+      margin-bottom: 0;
+      margin-top: 1rem;
+  }
+
+  .grid span {
+      margin-inline: 25%;
+      margin-top: 0;
+      margin-bottom: 1rem;
+  }
+
+  .dine_img div {
+      margin-block: 1rem;
+  }
+
+  .grid span {
+      color: black;
+      border-bottom: none;
+  }
+
+  /* PAGE MENU */
+
+  .article_mxtp {
+      text-align: center;
+  }
+
+  .button_mixitup {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+
+  }
+
+  .button_mixitup button {
+      margin-block: 1rem;
+      padding: 0.5rem 1rem;
+      border: 1px solid #ebe3db;
+      text-transform: uppercase;
+      background-color: #ebe3db;
+      transition-duration: 2s;
+  }
+
+  .button_mixitup button:hover {
+      color: #fff;
+      background-color: #950000;
+  }
+
+  .mixitup {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      background-color: #ebe3db;
+      height: 100%;
+  }
+
+  .mixitup img {
+      padding-inline: 0.5rem;
+  }
+
+  /* SURVOL */
+  .survol_mix img {
+      width: 5rem;
+  }
+
+  .survoller_mix {
+      position: relative;
+      background-color: ;
+
+  }
+
+  .survol_mix {
+      position: absolute;
+
+      color: #fff;
+      -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+      transform: scale(0);
+      transition-duration: 2s;
+
+      top: 1rem;
+      bottom: 1rem;
+      left: 1rem;
+      right: 1rem;
+      text-align: center;
+      padding-block: 2rem;
+      margin-block: 1rem;
+      border: 0.5rem solid #fff;
+      opacity: 0;
+      background-color: rgba(124, 117, 117, 0.9);
+      color: #fff;
+
+  }
+
+  .survoller_mix:hover img {
+      opacity: 1;
+  }
+
+  .survoller_mix:hover .survol_mix {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+
+  }
+
+
+
+  /* DESERTS */
+  .desert_img {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      padding: 1rem;
+      background-color: #ebe3db;
+  }
+
+
+
+  /* COCKTAILS */
+
+  .cocktail_img {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-bottom: 0.9rem;
+      padding: 1rem;
+      background-color: #ebe3db;
+  }
+
+
+  .survoller_desert_cocktail {
+      position: relative;
+      background-color: rgba(76, 67, 67, .9);
+  }
+
+  .survol_desert_cocktail {
+      position: absolute;
+      top: 1rem;
+      bottom: 1rem;
+      left: 1rem;
+      right: 1rem;
+      text-align: center;
+      padding-block: 3rem;
+      border: 0.5rem solid #fff;
+      opacity: 0;
+      color: #fff;
+      transform: scale();
+  }
+
+  .survoller_desert_cocktail:hover img {
+      opacity: 0.2;
+  }
+
+  .survoller_desert_cocktail:hover .survol_desert_cocktail {
+      opacity: 1;
+      transition-duration: 3s;
+  }
+
+  .survol_desert_cocktail p:first-child {
+      font-size: 3.125rem;
+  }
+
+  .survol_desert_cocktail img {
+      width: 4rem;
+  }
+
+
+  /* page contact */
+
+  .contact h3 {
+      margin-left: 0;
+  }
+
+  .formulaire p {
+      text-align: center;
+  }
+
+  .formulaire form {
+      width: 60%;
+      margin-inline: auto;
+      background-color: #ebe3db;
+      padding-bottom: 1rem;
+  }
+
+  .formulaire form div {
+      display: flex;
+      margin-left: 7%;
+  }
+
+  .formulaire form div fieldset {
+      border: none;
+      width: 45%;
+  }
+
+  .formulaire form>fieldset {
+      border: none;
+      text-align: center;
+  }
+
+  .formulaire form button {
+      display: flex;
+      margin-inline: auto;
+      padding: 0.2rem 2rem;
+      border: none;
+      border-radius: 0.2rem;
+      font-size: 1rem;
+      color: #fff;
+      background-color: #4c4442;
+  }
+
+  input {
+      width: 100%;
+      margin-left: 1rem;
+      border: 1px solid #4c4442;
+      border-radius: 0.2rem;
+  }
+
+  span {
+      margin-left: 0;
+      margin-right: 0.5rem;
+      color: #950000;
+      border-bottom: 1px dashed #950000;
+  }
+
+  textarea {
+      width: 83%;
+  }
+
+  form>h3 {
+      padding-left: 5rem;
+  }
+
+  /* TABLETTE */
+
+  @media screen and (min-width:781px) and (max-width:980px) {
+
+
+
+      .header menu,
+      .header .tab_menu {
+          display: block;
+          text-align: center;
+      }
+
+
+      .header .nav_tab {
+          display: flex;
+          justify-content: space-between;
+          gap: 1rem;
+          list-style: none;
+          padding-left: 0;
+
+      }
+
+      .header menu nav {
+          background-color: #ebe3db;
+          padding-bottom: 0.01rem;
+      }
+
+      .float img {
+          float: none;
+          width: 100%;
+      }
+
+      .float p {
+          margin-right: 0;
+      }
+  }
+
+
+  /* MOBILE */
+  @media screen and (max-width: 780px) {
+
+      .header menu,
+      .header .tab_menu {
+          display: block;
+          text-align: center;
+          margin-inline: auto;
+      }
+
+      .header .nav_tab {
+          display: block;
+          width: 100%;
+          padding-left: 0;
+
+      }
+
+      .header .nav_tab li a {
+        display: block;
+          padding-block: rem;
+          border-bottom: 1px solid #4c4442;
+
+      }
+ .header menu {
+    padding-left: 0;
+ }
+
+      .header menu nav {
+        width: 100%;
+          background-color: #ebe3db;
+          padding-bottom: 0.01rem;
+      }
+
+
+
+      .float img {
+          float: none;
+          width: 100%;
+      }
+
+      .float p {
+          margin-right: 0;
+      }
+
+
+      input {
+        width: 90%;
+        margin-left: 1rem;
+        border: 1px solid #4c4442;
+        border-radius: 0.2rem;
+    }
+    .formulaire form div {
+        display: block;
+    }
+  
+    .formulaire form div fieldset {
+        border: none;
+        width: 100%;
+    }
+  
+ 
+    
+
+
+  .flex {
+      display: block;
+  }
+
+  .flex section {
+      padding-bottom: 0.2rem;
+
+  }
+
+  .button {
+      width: 75%;
+      display: flex;
+      margin-inline: auto;
+      padding-block: 0.5rem;
+      font-size: 1rem;
+      color: #fff;
+      background-color: #4c4442;
+  }
+
+  .footer {
+      display: block;
+  }
+
+  .address {
+      display: block;
+      padding-block: 1rem;
+  }
+
+  .grid {
+      display: block;
+      background-color: #ebe3db;
+
+  }
+
+  .grid span {
+      margin-inline: 10%;
+      margin-top: 0;
+      margin-bottom: 1rem;
+  }
+
+  .formulaire form div {
+      display: block;
+  }
+
+
+  .contact h3 {
+      margin-left: 0;
+  }
+
+  
+
+  .formulaire form {
+      width: 100%;
+      margin-inline: auto;
+      background-color: #ebe3db;
+      padding-bottom: 1rem;
+  }
+
+ 
+}
+ 
+
+
+ 
+
+ 
